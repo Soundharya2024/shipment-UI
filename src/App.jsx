@@ -147,7 +147,7 @@ const App = () => {
             <Select />
           </Form.Item>
         </div>
-        <Flex justify="center" className="mb-5" gap="large">
+        <Flex justify="center" gap="large">
           <Form.Item label={null}>
             <Button type="primary" htmlType="submit">
               Submit
