@@ -147,11 +147,14 @@ const App = () => {
             <Select />
           </Form.Item>
         </div>
-        <Flex justify="center">
-          <Form.Item label={null} className="mb-5">
+        <Flex justify="center" className="mb-5" gap="large">
+          <Form.Item label={null}>
             <Button type="primary" htmlType="submit">
               Submit
             </Button>
+          </Form.Item>
+          <Form.Item label={null}>
+            <Button>Reset</Button>
           </Form.Item>
         </Flex>
       </div>
