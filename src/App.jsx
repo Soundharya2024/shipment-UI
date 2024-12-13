@@ -24,7 +24,9 @@ const App = () => {
             label="Service Locations"
             name="Service_Locations"
             className="w-[300px]"
-            rules={[{ required: true }]}
+            rules={[
+              { required: true, message: "Please select Service Locations!" },
+            ]}
           >
             <Select />
           </Form.Item>
@@ -32,7 +34,7 @@ const App = () => {
             label="Customer"
             name="Customer"
             className="w-[300px]"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Please select Customer!" }]}
           >
             <Select />
           </Form.Item>
@@ -40,7 +42,7 @@ const App = () => {
             label="Commodity"
             name="Commodity"
             className="w-[300px]"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Please select Commodity!" }]}
           >
             <Select />
           </Form.Item>
@@ -48,7 +50,7 @@ const App = () => {
             label="Origin"
             name="Origin"
             className="w-[300px]"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Please select Origin!" }]}
           >
             <Select />
           </Form.Item>
@@ -64,7 +66,7 @@ const App = () => {
             label="Rate Per MT"
             name="Rate_Per_MT"
             className="w-[300px]"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Please input Rate Per MT!" }]}
           >
             <InputNumber className="w-[300px]" />
           </Form.Item>
@@ -72,7 +74,12 @@ const App = () => {
             label="Rate Confirmation"
             name="Rate_Confirmation"
             className="w-[300px]"
-            rules={[{ required: true }]}
+            rules={[
+              {
+                required: true,
+                message: "Please input Rate Confirmation URL!",
+              },
+            ]}
           >
             <Input addonBefore="https://" />
           </Form.Item>
